@@ -24,7 +24,7 @@ import {
   _methodIsIgnored,
 } from '../utils';
 import { AttributeNames } from '../enums/AttributeNames';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { GRPC_STATUS_CODE_OK } from '../status-code';
 
 export const clientStreamAndUnaryHandler = function <RequestType, ResponseType>(

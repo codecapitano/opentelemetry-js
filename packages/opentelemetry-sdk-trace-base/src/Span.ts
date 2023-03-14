@@ -43,7 +43,7 @@ import {
   sanitizeAttributes,
 } from '@opentelemetry/core';
 import { IResource } from '@opentelemetry/resources';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { ExceptionEventName } from './enums';
 import { ReadableSpan } from './export/ReadableSpan';
 import { SpanProcessor } from './SpanProcessor';

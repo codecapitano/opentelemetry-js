@@ -22,7 +22,7 @@ import {
   TextMapPropagator,
 } from '@opentelemetry/api';
 import * as opentracing from 'opentracing';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 
 function translateReferences(references: opentracing.Reference[]): api.Link[] {
   const links: api.Link[] = [];

@@ -17,7 +17,7 @@
 import type * as grpcTypes from 'grpc';
 import type * as events from 'events';
 import { SendUnaryDataCallback, GrpcClientFunc } from './types';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { context, Span, SpanStatusCode, propagation } from '@opentelemetry/api';
 import {
   _grpcStatusCodeToSpanStatus,

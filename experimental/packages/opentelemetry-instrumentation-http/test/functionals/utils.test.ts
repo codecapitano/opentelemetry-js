@@ -23,7 +23,7 @@ import {
   Attributes,
 } from '@opentelemetry/api';
 import { BasicTracerProvider, Span } from '@opentelemetry/sdk-trace-base';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import * as assert from 'assert';
 import { IncomingMessage, ServerResponse } from 'http';
 import { Socket } from 'net';

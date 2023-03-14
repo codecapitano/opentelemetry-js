@@ -23,7 +23,7 @@ import {
   hrTimeToMilliseconds,
   hrTimeToMicroseconds,
 } from '@opentelemetry/core';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 
 export const grpcStatusCodeToOpenTelemetryStatusCode = (
   status: grpc.status | grpcJs.status

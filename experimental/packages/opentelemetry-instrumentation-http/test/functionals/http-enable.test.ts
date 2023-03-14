@@ -28,8 +28,8 @@ import {
   SimpleSpanProcessor,
 } from '@opentelemetry/sdk-trace-base';
 import {
-  NetTransportValues,
-  SemanticAttributes,
+  SemanticAttributesValuesWeb as SemanticAttributesValues,
+  SemanticAttributesWeb as SemanticAttributes,
 } from '@opentelemetry/semantic-conventions';
 import * as assert from 'assert';
 import * as nock from 'nock';
@@ -340,7 +340,7 @@ describe('HttpInstrumentation', () => {
           );
           assert.strictEqual(
             span.attributes[SemanticAttributes.NET_TRANSPORT],
-            NetTransportValues.IP_TCP
+            SemanticAttributesValues.NET_TRANSPORT_IP_TCP
           );
           assertSpan(span, kind, validations);
         });

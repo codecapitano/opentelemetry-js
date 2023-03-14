@@ -32,7 +32,7 @@ import {
 import { CALL_SPAN_ENDED } from './serverUtils';
 import { EventEmitter } from 'events';
 import { AttributeNames } from '../enums/AttributeNames';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { metadataCaptureType } from '../internal-types';
 import { GRPC_STATUS_CODE_OK } from '../status-code';
 

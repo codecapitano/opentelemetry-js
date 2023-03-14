@@ -48,7 +48,7 @@ import {
   metadataCapture,
   URI_REGEX,
 } from '../utils';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { AttributeValues } from '../enums/AttributeValues';
 
 /**

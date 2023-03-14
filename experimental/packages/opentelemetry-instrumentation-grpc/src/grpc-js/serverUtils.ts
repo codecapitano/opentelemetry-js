@@ -34,7 +34,7 @@ import {
 } from '../utils';
 import { IgnoreMatcher } from '../types';
 import { AttributeNames } from '../enums/AttributeNames';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { GRPC_STATUS_CODE_OK } from '../status-code';
 
 export const CALL_SPAN_ENDED = Symbol('opentelemetry call span ended');

@@ -24,7 +24,7 @@ import {
 import * as core from '@opentelemetry/core';
 import * as web from '@opentelemetry/sdk-trace-web';
 import { AttributeNames } from './enums/AttributeNames';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import { FetchError, FetchResponse, SpanData } from './types';
 import { VERSION } from './version';
 import { _globalThis } from '@opentelemetry/core';

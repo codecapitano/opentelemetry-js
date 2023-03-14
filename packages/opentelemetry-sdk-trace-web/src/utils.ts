@@ -26,7 +26,7 @@ import {
   timeInputToHrTime,
   urlMatches,
 } from '@opentelemetry/core';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 
 // Used to normalize relative URLs
 let urlNormalizingAnchor: HTMLAnchorElement | undefined;

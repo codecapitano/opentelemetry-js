@@ -20,7 +20,7 @@ import {
   MeterProvider,
 } from '@opentelemetry/sdk-metrics';
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 import * as assert from 'assert';
 import { HttpInstrumentation } from '../../src/http';
 import { httpRequest } from '../utils/httpRequest';

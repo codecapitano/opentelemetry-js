@@ -52,7 +52,7 @@ import {
 import { EventEmitter } from 'events';
 import { _extractMethodAndService, metadataCapture, URI_REGEX } from '../utils';
 import { AttributeValues } from '../enums/AttributeValues';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 
 export class GrpcJsInstrumentation extends InstrumentationBase {
   private _metadataCapture: metadataCaptureType;

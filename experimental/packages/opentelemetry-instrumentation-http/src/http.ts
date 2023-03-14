@@ -58,7 +58,7 @@ import {
 } from '@opentelemetry/instrumentation';
 import { RPCMetadata, RPCType, setRPCMetadata } from '@opentelemetry/core';
 import { errorMonitor } from 'events';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 
 /**
  * Http instrumentation instrumentation for Opentelemetry

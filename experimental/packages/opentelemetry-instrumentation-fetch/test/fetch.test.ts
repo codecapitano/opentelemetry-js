@@ -41,7 +41,7 @@ import {
   FetchCustomAttributeFunction,
 } from '../src';
 import { AttributeNames } from '../src/enums/AttributeNames';
-import { SemanticAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticAttributesWeb as SemanticAttributes } from '@opentelemetry/semantic-conventions';
 
 class DummySpanExporter implements tracing.SpanExporter {
   export(spans: any) {}

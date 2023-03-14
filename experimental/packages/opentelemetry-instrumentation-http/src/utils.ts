@@ -22,8 +22,8 @@ import {
   SpanKind,
 } from '@opentelemetry/api';
 import {
-  NetTransportValues,
-  SemanticAttributes,
+  SemanticAttributesValuesWeb as SemanticAttributesValues,
+  SemanticAttributesWeb as SemanticAttributes,
 } from '@opentelemetry/semantic-conventions';
 import {
   IncomingHttpHeaders,
@@ -386,9 +386,9 @@ export const getAttributesFromHttpKind = (kind?: string): SpanAttributes => {
   if (kind) {
     attributes[SemanticAttributes.HTTP_FLAVOR] = kind;
     if (kind.toUpperCase() !== 'QUIC') {
-      attributes[SemanticAttributes.NET_TRANSPORT] = NetTransportValues.IP_TCP;
+      attributes[SemanticAttributes.NET_TRANSPORT] = SemanticAttributesValues.NET_TRANSPORT_IP_TCP;
     } else {
-      attributes[SemanticAttributes.NET_TRANSPORT] = NetTransportValues.IP_UDP;
+      attributes[SemanticAttributes.NET_TRANSPORT] = SemanticAttributesValues.NET_TRANSPORT_IP_UDP;
     }
   }
   return attributes;
