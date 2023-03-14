@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { DetectorSync, IResource, Resource, ResourceDetectionConfig } from '..';
 import { ResourceAttributes } from '../types';
 import { diag } from '@opentelemetry/api';

@@ -39,7 +39,7 @@ import {
   SpanExporter,
 } from '@opentelemetry/sdk-trace-base';
 import { Resource } from '@opentelemetry/resources';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 
 import { NodeTracerProvider } from '../src/NodeTracerProvider';
 

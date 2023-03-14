@@ -18,7 +18,7 @@ import * as sinon from 'sinon';
 import * as assert from 'assert';
 import { SDK_INFO } from '@opentelemetry/core';
 import { Resource, ResourceAttributes } from '../src';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { describeBrowser, describeNode } from './util';
 import { diag } from '@opentelemetry/api';
 import { Resource as Resource190 } from '@opentelemetry/resources_1.9.0';

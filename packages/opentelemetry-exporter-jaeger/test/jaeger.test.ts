@@ -23,7 +23,7 @@ import { ReadableSpan } from '@opentelemetry/sdk-trace-base';
 import { TraceFlags } from '@opentelemetry/api';
 import { Resource } from '@opentelemetry/resources';
 import * as nock from 'nock';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 
 describe('JaegerExporter', () => {
   const readableSpan: ReadableSpan = {

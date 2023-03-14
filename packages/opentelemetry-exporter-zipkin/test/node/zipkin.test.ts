@@ -27,7 +27,7 @@ import { Resource } from '@opentelemetry/resources';
 import { ZipkinExporter } from '../../src';
 import * as zipkinTypes from '../../src/types';
 import { TraceFlags } from '@opentelemetry/api';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 
 const MICROS_PER_SECS = 1e6;
 

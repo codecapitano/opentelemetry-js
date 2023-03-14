@@ -16,7 +16,7 @@
 
 import * as sinon from 'sinon';
 import { Resource } from '@opentelemetry/resources';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 
 export const mockedHrTimeMs = 1586347902211;
 

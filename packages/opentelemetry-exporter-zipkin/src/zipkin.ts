@@ -24,7 +24,7 @@ import {
   defaultStatusCodeTagName,
   defaultStatusErrorTagName,
 } from './transform';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { prepareGetHeaders } from './utils';
 
 /**

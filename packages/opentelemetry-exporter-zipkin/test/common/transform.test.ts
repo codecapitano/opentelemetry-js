@@ -23,7 +23,7 @@ import {
 import { Resource } from '@opentelemetry/resources';
 import { BasicTracerProvider, Span } from '@opentelemetry/sdk-trace-base';
 import * as assert from 'assert';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import {
   defaultStatusCodeTagName,
   defaultStatusErrorTagName,

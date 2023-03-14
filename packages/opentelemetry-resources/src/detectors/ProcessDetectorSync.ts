@@ -15,7 +15,7 @@
  */
 
 import { diag } from '@opentelemetry/api';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { Resource } from '../Resource';
 import { DetectorSync, ResourceAttributes } from '../types';
 import { ResourceDetectionConfig } from '../config';

@@ -15,7 +15,7 @@
  */
 
 import { diag } from '@opentelemetry/api';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { SDK_INFO } from '@opentelemetry/core';
 import { ResourceAttributes } from './types';
 import { defaultServiceName } from './platform';

@@ -23,7 +23,7 @@ import {
 } from '@opentelemetry/core';
 import { ReadableSpan, SpanExporter } from '@opentelemetry/sdk-trace-base';
 import { Socket } from 'dgram';
-import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { spanToThrift } from './transform';
 import * as jaegerTypes from './types';
 
