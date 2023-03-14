@@ -14,3 +14,5 @@
  * limitations under the License.
  */
 export * from './SemanticResourceAttributes';
+export * as SemanticResourceAttributesWeb from './SemanticResourceAttributesWeb';
+export * as SemanticResourceAttributesValuesWeb from './SemanticResourceAttributesValuesWeb';

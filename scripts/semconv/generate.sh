@@ -41,6 +41,54 @@ docker run --rm \
   --output /output/SemanticResourceAttributes.ts \
   -Dclass=SemanticResourceAttributes
 
+# Tree shakeable and minifiable for web
+
+docker run --rm \
+  -v ${SCRIPT_DIR}/opentelemetry-specification/semantic_conventions/trace:/source \
+  -v ${SCRIPT_DIR}/templates:/templates \
+  -v ${ROOT_DIR}/packages/opentelemetry-semantic-conventions/src/trace/:/output \
+  otel/semconvgen:${GENERATOR_VERSION} \
+  -f /source \
+  code \
+  --template /templates/SemanticAttributes-web.ts.j2 \
+  --output /output/SemanticAttributesWeb.ts \
+  -Dclass=SemanticAttributes
+
+docker run --rm \
+  -v ${SCRIPT_DIR}/opentelemetry-specification/semantic_conventions/resource:/source \
+  -v ${SCRIPT_DIR}/templates:/templates \
+  -v ${ROOT_DIR}/packages/opentelemetry-semantic-conventions/src/resource/:/output \
+  otel/semconvgen:${GENERATOR_VERSION} \
+  -f /source \
+  code \
+  --template /templates/SemanticAttributes-web.ts.j2 \
+  --output /output/SemanticResourceAttributesWeb.ts \
+  -Dclass=SemanticResourceAttributes
+
+docker run --rm \
+  -v ${SCRIPT_DIR}/opentelemetry-specification/semantic_conventions/trace:/source \
+  -v ${SCRIPT_DIR}/templates:/templates \
+  -v ${ROOT_DIR}/packages/opentelemetry-semantic-conventions/src/trace/:/output \
+  otel/semconvgen:${GENERATOR_VERSION} \
+  -f /source \
+  code \
+  --template /templates/SemanticAttributesValues-web.ts.j2 \
+  --output /output/SemanticAttributesValuesWeb.ts \
+  -Dclass=SemanticAttributes
+
+docker run --rm \
+  -v ${SCRIPT_DIR}/opentelemetry-specification/semantic_conventions/resource:/source \
+  -v ${SCRIPT_DIR}/templates:/templates \
+  -v ${ROOT_DIR}/packages/opentelemetry-semantic-conventions/src/resource/:/output \
+  otel/semconvgen:${GENERATOR_VERSION} \
+  -f /source \
+  code \
+  --template /templates/SemanticAttributesValues-web.ts.j2 \
+  --output /output/SemanticResourceAttributesValuesWeb.ts \
+  -Dclass=SemanticResourceAttributes
+
+
+
 # Run the automatic linting fixing task to ensure it will pass eslint
 cd "$ROOT_DIR"
 
