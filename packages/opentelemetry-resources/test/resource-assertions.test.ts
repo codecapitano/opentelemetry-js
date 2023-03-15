@@ -132,9 +132,9 @@ describe('assertK8sResource', () => {
 describe('assertTelemetrySDKResource', () => {
   it('uses default validations', () => {
     const resource = new Resource({
-      [SemanticResourceAttributes.TELEMETRY_SDK_NAME]: SDK_INFO.NAME,
-      [SemanticResourceAttributes.TELEMETRY_SDK_LANGUAGE]: SDK_INFO.LANGUAGE,
-      [SemanticResourceAttributes.TELEMETRY_SDK_VERSION]: SDK_INFO.VERSION,
+      name: SDK_INFO[SemanticResourceAttributes.TELEMETRY_SDK_NAME],
+      language: SDK_INFO[SemanticResourceAttributes.TELEMETRY_SDK_LANGUAGE],
+      version: SDK_INFO[SemanticResourceAttributes.TELEMETRY_SDK_VERSION],
     });
     assertTelemetrySDKResource(resource, {});
   });

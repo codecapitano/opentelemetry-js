@@ -199,9 +199,9 @@ export const assertTelemetrySDKResource = (
   }
 ) => {
   const defaults = {
-    name: SDK_INFO.NAME,
-    language: SDK_INFO.LANGUAGE,
-    version: SDK_INFO.VERSION,
+    name: SDK_INFO[SemanticResourceAttributes.TELEMETRY_SDK_NAME],
+    language: SDK_INFO[SemanticResourceAttributes.TELEMETRY_SDK_LANGUAGE],
+    version: SDK_INFO[SemanticResourceAttributes.TELEMETRY_SDK_VERSION],
   };
   validations = { ...defaults, ...validations };
 

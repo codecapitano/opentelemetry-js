@@ -13,6 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 export * from './SemanticAttributes';
+
+// Tree Shakable const collections
 export * as SemanticAttributesWeb from './SemanticAttributesWeb';
 export * as SemanticAttributesValuesWeb from './SemanticAttributesValuesWeb';

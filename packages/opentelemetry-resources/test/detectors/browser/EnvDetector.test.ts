@@ -16,7 +16,8 @@
 
 import * as assert from 'assert';
 import { RAW_ENVIRONMENT } from '@opentelemetry/core';
-import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+// import { SemanticResourceAttributesWeb as SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
+import { SemanticResourceAttributes } from '@opentelemetry/semantic-conventions';
 import { envDetector, IResource } from '../../../src';
 import {
   assertEmptyResource,
